@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PR234</string>
+    <string name="name">Введите имя пользователя</string>
+    <string name="enter">Войти</string>
+    <string name="gorod">Введите город</string>
+    <string name="gettt">Получить прогноз погоды</string>
+    <string name="pogoda">Информация о погоде появится здесь</string>
+</resources>
