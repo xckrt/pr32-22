@@ -1,28 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="16dp">
 
     <EditText
         android:id="@+id/cityEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/gorod"
-        android:inputType="text" />
+        android:hint="Введите город" />
 
     <Button
         android:id="@+id/getWeatherButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Получить погоду" />
+
+
+
+    <!-- Поля для редактирования данных о погоде -->
+    <EditText
+        android:id="@+id/temperatureEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/gettt" />
+        android:hint="Температура" />
 
-    <TextView
-        android:id="@+id/weatherInfoTextView"
+    <EditText
+        android:id="@+id/pressureEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/pogoda" />
+        android:hint="Давление" />
 
+    <EditText
+        android:id="@+id/windSpeedEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Скорость ветра" />
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Описание" />
+
+    <Button
+        android:id="@+id/updateWeatherButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Обновить погоду" />
+    <Button
+        android:id="@+id/checkDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Проверить базу данных" />
+    <Button
+        android:id="@+id/DeleteDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Удалить базу данных" />
 </LinearLayout>

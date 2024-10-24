@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id ("kotlin-kapt")
 }
 
 android {
@@ -36,6 +37,14 @@ android {
 }
 
 dependencies {
+    val room_version = "2.4.3" // Определяем версию Room
+
+    // Добавляем зависимости для Room
+    implementation ("androidx.room:room-runtime:$room_version")
+    kapt ("androidx.room:room-compiler:$room_version")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2")
+    // Прочие зависимости
     implementation ("com.google.code.gson:gson:2.8.5")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
